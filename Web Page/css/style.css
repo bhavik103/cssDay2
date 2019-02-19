@@ -1,0 +1,196 @@
+body *{
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: 'work_sansregular','work_sansbold';
+    src: url('worksans-regular-webfont.eot'),
+    	 url('worksans-bold-webfont.eot');
+    src: url('worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('worksans-regular-webfont.woff2') format('woff2'),
+         url('worksans-regular-webfont.woff') format('woff'),
+         url('worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('worksans-bold-webfont.woff2') format('woff2'),
+         url('worksans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*loader>>>>>>>>>>>>>>>>>>>>*/
+#loader {
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: url(../images/loading.gif);
+}
+
+#myDiv {
+  display: none;
+}
+
+.main{
+	background-color: #6FCEF7;
+}
+
+/* Styling for TABLE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+table{
+	width: 80%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+table, th{
+	font-family: 'work_sansbold';
+}
+
+table, td{
+	font-family: 'work_sansregular';
+}
+
+table, caption{
+	color: black;
+	font-weight: bolder;
+}
+
+
+/* Styling for FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.myForm{
+	left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+	max-width: 600px;
+	background-color: white;
+	margin-top: 10px
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.technology{
+	margin-bottom: 16px;
+}
+
+.myGender{
+	margin-bottom: 16px
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.myForm{
+  border-radius: 5px;	
+  padding: 20px;
+}
+
+.technology input:before {
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+}
+
+.technology input:checked:before {
+  background-color: green;
+}
+
+.myCheckbox label {
+		  cursor: pointer;
+	    display: inline-block;
+	    position: relative;
+	    padding-left: 25px; /* 10 px padding right + 15px input type*/
+	    margin-right: 10px; /* margin between inputs types */
+	}
+
+label:before {  
+	    content: "";
+	    width: 15px;
+	    height: 15px;
+	    position: absolute;  
+	    left: 0;
+	}
+
+input[type=checkbox] {  
+    	display: none;  
+	}
+	
+.myCheckbox label:before {
+		background: url('../images/checkbox_small.png') left center no-repeat;
+    margin-top: 2px;
+	}
+	
+input[type=checkbox]:checked + label:before {  
+	    background: url('../images/checkbox_selected_small.png') left center no-repeat;  
+	} 
+
+
+.myCheckbox img{
+	display: none;
+	height: 50px;
+	width: 50px;	
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="checkbox"] + img{
+	display: none;
+}
+
+input[type="checkbox"]:checked + img{
+	display: block;
+}
+
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}

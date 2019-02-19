@@ -1,0 +1,21 @@
+body *{
+  box-sizing: border-box;
+}
+
+.table {
+  display: table;
+  background: lightblue;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid black;
+}

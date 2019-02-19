@@ -1,0 +1,72 @@
+body *{
+	box-sizing: border-box;
+}
+
+body{
+  background-color: #6fcef7
+}
+
+@font-face {
+    font-family: 'work_sansregular','work_sansbold';
+    src: url('worksans-regular-webfont.eot'),
+    	 url('worksans-bold-webfont.eot');
+    src: url('worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('worksans-regular-webfont.woff2') format('woff2'),
+         url('worksans-regular-webfont.woff') format('woff'),
+         url('worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('worksans-bold-webfont.woff2') format('woff2'),
+         url('worksans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*loader>>>>>>>>>>>>>>>>>>>>*/
+#loader {
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: url(../images/loading.gif);
+}
+
+#myDiv {
+  display: none;
+}
+
+/* Styling for TABLE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+table, td, tr, th{
+  background-color: #9CF97C;
+  border-color: black !important;
+}
+
+table, th{
+	font-family: 'work_sansbold';
+}
+
+table, td{
+	font-family: 'work_sansregular';
+}
+
+/* Styling for FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.myForm{
+	left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+	background-color: #9CF97C;
+	margin-top: 10px;
+  padding: 15px;
+}
+
+.text-right{
+  margin-bottom: 10px
+}
+
+textarea{
+  resize: none;
+}

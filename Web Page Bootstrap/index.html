@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onload="myFunction()">
+
+<div id="loader"></div>
+
+<div class="mainDiv " id="myDiv">
+	<div class="container myTable">
+		<h2>Employee Details:-</h2>
+		<div class="table-responsive">
+		<table class="table table-bordered">
+			
+			<thead>
+			    <th>First Name</th>
+			    <th>Last Name</th> 
+			    <th>Email</th>
+			</thead>
+		    <tbody>
+				<tr>
+				   <td>Bhavik</td>
+				   <td>Kalariya</td>
+				   <td>bhavik@gmail.com</td>
+				</tr>
+				<tr>
+				   <td>Vishal</td>
+				   <td>Pankhaniya</td>
+				   <td>vishal@gmail.com</td>
+			  	</tr>
+			 	<tr>
+			        <td>Dixit</td>
+			    	<td>Savaliya</td>
+			    	<td>dixit@gmail.com</td>
+			    </tr>
+			</tbody>
+		</table>
+	</div>
+	</div>
+
+	<div class=" container">
+		<div class="myForm ">
+		<h3>Form:-</h3>
+	  <form>
+	  	<div class="row">
+	  		<div class="col-sm-6 form-group">
+			    <label for="firstname">First Name:</label>
+			    <input type="text" id="firstname"  class="form-control name="firstname" placeholder="Your first name..">
+			</div>
+
+			<div class="col-sm-6 form-group">
+			    <label for="lastname">Last Name:</label>
+			    <input type="text" id="lastname"  class="form-control name="lastname" placeholder="Your last name..">
+			</div>
+		</div>
+
+		<div class="form-group">
+		    <label for="email">Email:</label>
+		    <input type="email" id="email"  class="form-control name="email" placeholder="Your email..">
+		</div>
+
+	    <div class="row">
+	    	<div class="col-sm-6">
+			    <div class="myGender">
+			    	<label>Gender:</label>
+			    	<div class="radio">
+      					<label><input type="radio" name="gender">Male</label>
+    				</div>
+					<div class="radio">
+      					<label><input type="radio" name="gender">Female</label>
+    				</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+			    <div class="technology">
+			    	<div>
+			    		<label>Technology:</label>
+			    	</div>
+			    	
+			    	<div class="checkbox">
+					    <label><input type="checkbox" name="check" value="check1">Java</label>
+			    	</div>
+
+			    	<div class="checkbox">
+				    	<label><input type="checkbox" name="check" value="check1">PHP</label>
+			    	</div>
+
+		     		<div class="checkbox">
+				    	<label><input type="checkbox" name="check" value="check1">Python</label>
+			    	</div>
+		    	</div>
+		    </div>
+    	</div>
+
+    	<div class="form-group">
+		    <label for="subject">About Me:</label>
+		    <textarea class="form-control" id="subject" name="subject"  class="form-control" placeholder="Say something about yourself.." style="height:200px"></textarea>
+		</div>
+	    <div class="text-right">
+	    	<button class="btn btn-primary">Save <img src="images/save.png"></button>
+	    </div>
+	  </form>
+	</div>
+</div>
+</div>
+
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>	

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onload="myFunction()">
+
+<div id="loader"></div>
+
+<div class="main" id="myDiv">
+	<div class="myTable">
+		<table align="center">
+			<caption><h3>Employee Details:-</h3></caption>
+		  <tr>
+		    <th>First Name</th>
+		    <th>Last Name</th> 
+		    <th>Email</th>
+		  </tr>
+		  <tr>
+		    <td>Bhavik</td>
+		    <td>Kalariya</td>
+		    <td>bhavik@gmail.com</td>
+		  </tr>
+		  <tr>
+		    <td>Vishal</td>
+		    <td>Pankhaniya</td>
+		    <td>vishal@gmail.com</td>
+		  </tr>
+		  <tr>
+		    <td>Dixit</td>
+		    <td>Savaliya</td>
+		    <td>dixit@gmail.com</td>
+		  </tr>
+		</table>
+	</div>
+
+	<div class="myForm">
+		<h3>Form:-</h3>
+	  <form>
+	    <label for="firstname">First Name:</label>
+	    <input type="text" id="firstname" name="firstname" placeholder="Your first name..">
+
+	    <label for="lastname">Last Name:</label>
+	    <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+	    <label for="email">Email:</label>
+	    <input type="email" id="email" name="email" placeholder="Your email..">
+
+	    <div class="myGender">
+	    	<label>Gender:</label>
+	    	<div>
+		    	<input type="radio" name="gender" value="male"> Male
+			</div>
+			<div>
+		    	<input type="radio" name="gender" value="female"> Female
+			</div>
+		</div>
+
+	    <div class="technology">
+	    	<div>
+	    		<label>Technology:</label>
+	    	</div>
+	    	
+	    	<div class="myCheckbox">
+	    		
+			    <input id="check1" type="checkbox" name="check" value="check1">
+			    <label for="check1">Java</label>
+		    	<img src="images/java.png" id="javaImg">
+	    	</div>
+
+	    	<div class="myCheckbox">
+	    		
+		    	<input id="check2" type="checkbox" name="check" value="check2"> 
+		    	<label for="check2">PHP</label>
+		    	<img src="images/php.png" id="phpImg">
+	    	</div>
+     		<div class="myCheckbox">
+     			
+		    	<input id="check3" type="checkbox" name="check" value="check3">
+		    	<label for="check3">Python</label>
+		    	<img src="images/python.png" id="pythonImg">
+	    	</div>
+    	</div>
+
+	    <label for="subject">About Me:</label>
+	    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+	    <div>
+	    	<button class="button">Save <img src="images/save.png"></button>
+	    </div>
+	  </form>
+	</div>
+</div>
+
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>	
